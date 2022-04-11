@@ -21,8 +21,5 @@ public class Lesson_20220411_03 {
         System.out.println("Hossz: " + travel.time);
         System.out.println("Ár: " + travel.price);
         System.out.println();
-
-        travel.price += 10; // visszaíródik
-        travel = null; // NEM íródik vissza
     }
 }
