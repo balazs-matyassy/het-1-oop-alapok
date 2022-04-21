@@ -15,6 +15,7 @@ Planet destination
 double time (órában)
 int price
 double distance (ez mező legyen vagy számított érték?)
+(Két bolygó pozíciójából következik.)
 
 String infoSheet()
 X bolygó -> Y bolygó
