@@ -4,6 +4,7 @@ public class Spaceship {
     private String type;
     private int speed;
     private int w, h, l;
+    private int cargo;
 
     public Spaceship() {
 
@@ -63,5 +64,17 @@ public class Spaceship {
 
     public int getVolume() {
         return w * h * l;
+    }
+
+    public int getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(int cargo) {
+        if (cargo >= 0 && cargo <= getVolume() * 0.6) {
+            this.cargo = cargo;
+        } else {
+            System.out.println("Nincs hely a rakománynak.");
+        }
     }
 }
