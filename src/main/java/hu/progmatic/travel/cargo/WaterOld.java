@@ -19,6 +19,7 @@ public class WaterOld {
     }
 
     public void setUnitPrice(double unitPrice) {
+        System.out.println("Az ár megváltozott.");
         this.unitPrice = unitPrice;
         this.price = this.volume * this.unitPrice;
     }
