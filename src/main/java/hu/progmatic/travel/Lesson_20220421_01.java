@@ -1,9 +1,8 @@
 package hu.progmatic.travel;
 
 import hu.progmatic.travel.cargo.Water;
-import hu.progmatic.travel.cargo.WaterOld;
 
-public class App {
+public class Lesson_20220421_01 {
     public static void main(String[] args) {
         Water water = new Water();
         water.setVolume(200.0);

@@ -4,6 +4,7 @@ package hu.progmatic.physics;
 // import hu.progmatic.travel.cargo.Water;
 // FQN
 
+import hu.progmatic.travel.cargo.Water;
 import hu.progmatic.travel.cargo.WaterOld;
 
 public class App {
@@ -15,7 +16,6 @@ public class App {
         hu.progmatic.physics.material.Water w2 = new hu.progmatic.physics.material.Water();
 
         WaterOld wx;
-
         System.out.println(water1.getVolume());
     }
 }

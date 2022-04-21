@@ -13,10 +13,16 @@ public class Water {
     }
 
     public double getUnitPrice() {
-        return unitPrice;
+        // Ha nincsen unitPrice nevű paraméter,
+        // akkor this.unitPrice azonos a unitPrice-al
+        return this.unitPrice;
     }
 
     public void setUnitPrice(double unitPrice) {
+        // Ha van unitPrice nevű paraméter,
+        // akkor
+        // this.unitPrice a mezőt (osztályhoz tartozó memóriaterület) azonosítja
+        // unitPrice pedig a paramétert
         this.unitPrice = unitPrice;
     }
 

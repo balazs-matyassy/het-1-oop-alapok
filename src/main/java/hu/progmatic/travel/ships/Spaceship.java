@@ -5,6 +5,22 @@ public class Spaceship {
     private int speed;
     private int w, h, l;
 
+    public Spaceship() {
+
+    }
+
+    public Spaceship(String type, int w, int h, int l) {
+        this(type, w, h, l, 0);
+    }
+
+    public Spaceship(String type, int w, int h, int l, int speed) {
+        this.type = type;
+        this.w = w;
+        this.h = h;
+        this.l = l;
+        this.speed = speed;
+    }
+
     public String getType() {
         return type;
     }
