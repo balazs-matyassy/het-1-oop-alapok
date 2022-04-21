@@ -13,6 +13,19 @@ public class Pirate {
         this.spaceship = spaceship;
     }
 
+    public void pirate(Spaceship target) {
+        if (spaceship != null && spaceship.getSpeed() > target.getSpeed()) {
+            int loot = target.getCargo();
+
+            if (loot > spaceship.getMaxCargo()) {
+                loot = spaceship.getMaxCargo();
+            }
+
+            spaceship.setCargo(spaceship.getCargo() + loot);
+            target.setCargo(target.getCargo() - loot);
+        }
+    }
+
     public String getName() {
         return name;
     }

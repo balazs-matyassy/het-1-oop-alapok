@@ -70,8 +70,12 @@ public class Spaceship {
         return cargo;
     }
 
+    public int getMaxCargo() {
+        return (int) (getVolume() * 0.6);
+    }
+
     public void setCargo(int cargo) {
-        if (cargo >= 0 && cargo <= getVolume() * 0.6) {
+        if (cargo >= 0 && cargo <= getMaxCargo()) {
             this.cargo = cargo;
         } else {
             System.out.println("Nincs hely a rakománynak.");
