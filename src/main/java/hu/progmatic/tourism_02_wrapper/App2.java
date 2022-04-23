@@ -49,5 +49,30 @@ public class App2 {
         // mivel csak referencia szintjén adtam át a banknak, emiatt megváltozna az érték
 
         Integer unknown = null;
+
+        Double dw = 0.0;
+        Float fw = 12.0F;
+        Byte bw = 1;
+        Short sw;
+        Boolean blw;
+        Character chrw;
+        Long lw;
+        // char[]
+        // immutable
+        String strw;
+
+        Boolean attendance = null;
+        attendance = true;
+        attendance = false;
+
+        Double dw2 = 2.0;
+
+        // unboxing
+        // ha az egyik null, akkor kivétel keletkezik
+        if (dw > dw2) {
+            System.out.println("IGAZ");
+        } else {
+            System.out.println("HAMIS");
+        }
     }
 }
