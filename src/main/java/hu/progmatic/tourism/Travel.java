@@ -55,4 +55,11 @@ public class Travel {
 
         return Math.sqrt(dx * dx + dy * dy + dz * dz);
     }
+
+    public String getInfoSheet() {
+        return source.getName() + " -> " + destination.getName() + "\n"
+                + "idő:\t\t" + time + " óra\n"
+                + "ár:\t\t" + price + " GFt\n"
+                + "távolság:\t" + getDistance() + " km";
+    }
 }
