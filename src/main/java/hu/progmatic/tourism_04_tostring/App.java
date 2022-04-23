@@ -16,6 +16,7 @@ public class App {
                 new Travel(planets[2], planets[0], 3.0, 750)
         };
 
+        // heterogén kollekció
         Object[] dataSheets = {
                 "REPORTING IN PROGRESS :)",
                 3,
@@ -38,5 +39,9 @@ public class App {
             System.out.println(dataSheet);
             System.out.println();
         }
+
+        Object o = planets[0]; // OK
+        // Planet planet = o; // NEM OK, mivel az Object nem garantáltan Planet
+        Planet planet = (Planet) o; // casting, kikapcsolja a védelmet, ha o nem Planet volt, akkor kivétel keletkezik
     }
 }
