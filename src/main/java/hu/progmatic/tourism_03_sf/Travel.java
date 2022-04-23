@@ -1,4 +1,4 @@
-package hu.progmatic.tourism_02_wrapper;
+package hu.progmatic.tourism_03_sf;
 
 public class Travel {
     private Planet source;
