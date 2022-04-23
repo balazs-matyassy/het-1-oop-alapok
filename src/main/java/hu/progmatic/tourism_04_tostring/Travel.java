@@ -83,7 +83,8 @@ public class Travel {
         return Math.sqrt(dx * dx + dy * dy + dz * dz);
     }
 
-    public String getInfoSheet() {
+    @Override
+    public String toString() {
         String priceInfo = price != null
                 ? "ár:\t\t\t" + price + " GFt"
                 : "JELENLEG NEM FOGLALHATÓ";

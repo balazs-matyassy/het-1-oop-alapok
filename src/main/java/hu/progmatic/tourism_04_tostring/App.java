@@ -17,7 +17,7 @@ public class App {
         };
 
         for (Travel travel : travels) {
-            System.out.println(travel.getInfoSheet());
+            System.out.println(travel);
             System.out.println();
         }
     }
