@@ -59,7 +59,7 @@ public class Travel {
     public String getInfoSheet() {
         return source.getName() + " -> " + destination.getName() + "\n"
                 + "idő:\t\t" + time + " óra\n"
-                + "ár:\t\t" + price + " GFt\n"
+                + "ár:\t\t\t" + price + " GFt\n"
                 + "távolság:\t" + getDistance() + " km";
     }
 }
