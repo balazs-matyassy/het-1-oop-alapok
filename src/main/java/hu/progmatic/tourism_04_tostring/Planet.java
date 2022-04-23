@@ -53,4 +53,9 @@ public class Planet {
     public void setZ(int z) {
         this.z = z;
     }
+
+    @Override
+    public String toString() {
+        return name + " (" + x + ", " + y + ", " + z + ")";
+    }
 }

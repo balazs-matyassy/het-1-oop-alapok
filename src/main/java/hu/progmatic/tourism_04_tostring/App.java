@@ -16,8 +16,26 @@ public class App {
                 new Travel(planets[2], planets[0], 3.0, 750)
         };
 
-        for (Travel travel : travels) {
+        Object[] dataSheets = {
+                "REPORTING IN PROGRESS :)",
+                3,
+                2,
+                1,
+                planets[0],
+                planets[1],
+                planets[2],
+                travels[0],
+                travels[1],
+                travels[2]
+        };
+
+        /* for (Travel travel : travels) {
             System.out.println(travel);
+            System.out.println();
+        } */
+
+        for (Object dataSheet : dataSheets) {
+            System.out.println(dataSheet);
             System.out.println();
         }
     }
