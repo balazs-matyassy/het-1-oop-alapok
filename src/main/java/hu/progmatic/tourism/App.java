@@ -18,5 +18,13 @@ public class App {
             System.out.println(travel.getInfoSheet());
             System.out.println();
         }
+
+        planets[1].setY(10_000_000);
+
+        for (Travel travel : travels) {
+            System.out.println("====================");
+            System.out.println(travel.getInfoSheet());
+            System.out.println();
+        }
     }
 }
