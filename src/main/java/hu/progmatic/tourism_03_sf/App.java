@@ -2,6 +2,9 @@ package hu.progmatic.tourism_03_sf;
 
 public class App {
     public static void main(String[] args) {
+        Travel.setPresident("Gyula");
+        Travel.elect("Balázs", "Ria", 2000, 3000);
+
         Planet[] planets = {
                 new Planet("001", "Föld", 0, 0, 0),
                 new Planet("002", "Mars", 251_000_000, 0, 0),

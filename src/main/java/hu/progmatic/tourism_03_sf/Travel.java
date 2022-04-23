@@ -1,6 +1,8 @@
 package hu.progmatic.tourism_03_sf;
 
 public class Travel {
+    public static final int FOUNDED = 2210;
+    private static String president;
     private Planet source;
     private Planet destination;
     private double time;
@@ -14,6 +16,31 @@ public class Travel {
         this.destination = destination;
         this.time = time;
         this.price = price;
+    }
+
+    public static void elect(
+            String candidate1, String candidate2, String candidate3,
+            int votes1, int votes2, int votes3
+    ) {
+        if (votes1 >= votes2 && votes1 >= votes3) {
+            president = candidate1;
+        } else if (votes2 >= votes3) { // votes2 >= votes1 && votes2 >= votes3
+            president = candidate2;
+        } else {
+            president = candidate3;
+        }
+    }
+
+    public static void elect(String candidate1, String candidate2, int votes1, int votes2) {
+        elect(candidate1, candidate2, null, votes1, votes2, Integer.MIN_VALUE);
+    }
+
+    public static String getPresident() {
+        return president;
+    }
+
+    public static void setPresident(String president) {
+        Travel.president = president;
     }
 
     public Planet getSource() {
@@ -61,7 +88,11 @@ public class Travel {
                 ? "ár:\t\t\t" + price + " GFt"
                 : "JELENLEG NEM FOGLALHATÓ";
 
-        return source.getName() + " -> " + destination.getName() + "\n"
+        return "==============================\n"
+                + "\t Alapítva:\t" + FOUNDED + "\n"
+                + "\t Elnök\t\t: " + president + "\n"
+                + "==============================\n"
+                + source.getName() + " -> " + destination.getName() + "\n"
                 + "idő:\t\t" + time + " óra\n"
                 + priceInfo + "\n"
                 + "távolság:\t" + getDistance() + " km";
