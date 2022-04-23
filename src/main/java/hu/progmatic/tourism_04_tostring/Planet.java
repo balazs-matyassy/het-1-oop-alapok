@@ -54,8 +54,17 @@ public class Planet {
         this.z = z;
     }
 
+    // annotáció
+    // meglévő funkció megváltoztatása, nem új funkció
+    // @Override annotáció nem engedi, hogy véletlenül új funkciót hozzunk
     @Override
     public String toString() {
         return name + " (" + x + ", " + y + ", " + z + ")";
     }
+
+    // @Override miatt megjelenik a jogos hibaüzenet
+    /* @Override
+    public String toString(int repeat) {
+        return "Ilyen nincs. ;)";
+    } */
 }
