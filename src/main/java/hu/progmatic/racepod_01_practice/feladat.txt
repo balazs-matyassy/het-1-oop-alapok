@@ -1,5 +1,5 @@
 Hozzunk létre egy RacePod osztályt.
-- static int speedLimit
+- static Integer speedLimit (ha null, akkor nincsen korlát)
 - String name
 - int speed
 - boolean restricted
