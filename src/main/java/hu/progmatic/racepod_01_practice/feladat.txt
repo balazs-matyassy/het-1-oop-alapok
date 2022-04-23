@@ -1,0 +1,22 @@
+Hozzunk létre egy RacePod osztályt.
+- static int speedLimit
+- String name
+- int speed
+- boolean restricted
+
+toString adatlap
+konstruktorok + getterek / setterek
+
+a sebesség nem lehet kisebb -10-nél (tolatás)
+ha kisebb értéket szeretnénk beállítani, akkor legyen -10 az érték,
+és írjunk ki egy hibaüzenetet
+
+ha le van szabályoza a fogatunk, akkor ne lehessen nagyobb a sebesség a galaktikus sebességkorlátnál
+(ebben az esetben írjunk ki egy hibaüzentet, a sebesség értéke pedig legyen a korlát)
+
+Hozzunk létre 3 fogatot.
+Írjuk ki az adatlapjukat
+
+Keressük meg a leggyorsabbat és írjuk ki az adatait.
+
+Írjuk ki az átlagos sebességet.
