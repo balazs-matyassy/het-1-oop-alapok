@@ -1,5 +1,7 @@
 package hu.progmatic.club_02_inheritance;
 
+import java.util.Objects;
+
 public class Person {
     public static final int POPULATION = 20000000;
     private static int currentYear;
@@ -55,5 +57,18 @@ public class Person {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return id.equals(person.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

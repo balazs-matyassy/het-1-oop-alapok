@@ -12,5 +12,13 @@ public class App {
         System.out.println(bc);
         System.out.println(sc);
         System.out.println(gc);
+
+        Person p4 = new Person("003", "Annácska", 12);
+
+        // nem az állapotot definiáltuk egyenlőnek, hanem az embert
+        // az ember nem változik a korral
+        if (p4.equals(p4)) {
+            System.out.println("Anna felnőttként is Annácska marad.");
+        }
     }
 }
