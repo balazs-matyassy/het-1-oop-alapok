@@ -1,21 +1,21 @@
 package hu.progmatic.club_02_inheritance;
 
-public class SilverClubcard extends BronzeClubcard {
-    public SilverClubcard() {
+public class GoldClubcard extends BronzeClubcard {
+    public GoldClubcard() {
         super();
     }
 
-    public SilverClubcard(Person owner, String expiration, int admissions) {
+    public GoldClubcard(Person owner, String expiration, int admissions) {
         super(owner, expiration, admissions);
     }
 
     @Override
     public int getTotalPrice() {
-        return getAdmissions() * 500 + 5000;
+        return 25000;
     }
 
     @Override
     public String getCardType() {
-        return "Silver";
+        return "Gold";
     }
 }
