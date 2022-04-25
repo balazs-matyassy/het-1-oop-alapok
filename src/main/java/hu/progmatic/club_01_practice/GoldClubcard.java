@@ -1,14 +1,14 @@
 package hu.progmatic.club_01_practice;
 
-public class BronzeClubcard {
+public class GoldClubcard {
     private Person owner;
     private String expiration;
     private int admissions;
 
-    public BronzeClubcard() {
+    public GoldClubcard() {
     }
 
-    public BronzeClubcard(Person owner, String expiration, int admissions) {
+    public GoldClubcard(Person owner, String expiration, int admissions) {
         this.owner = owner;
         this.expiration = expiration;
         this.admissions = admissions;
@@ -39,12 +39,12 @@ public class BronzeClubcard {
     }
 
     public int getTotalPrice() {
-        return admissions * 1000;
+        return 25000;
     }
 
     @Override
     public String toString() {
-        return "BronzeClubcard{" +
+        return "GoldClubcard{" +
                 "owner=" + owner +
                 ", expiration='" + expiration + '\'' +
                 ", admissions=" + admissions + '\'' +
