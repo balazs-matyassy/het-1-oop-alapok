@@ -2,6 +2,8 @@ package hu.progmatic.container_01_practice;
 
 public class App {
     public static void main(String[] args) {
+        Container.setTaxRate(0.27);
+
         Cargo water = new Cargo("CARGO/001", "Víz", 10);
         Container[] containers = {
                 new Container(water, 2, 2, 2),
