@@ -17,6 +17,8 @@ public class App {
         int speedSum = 0;
 
         for (RacePod racePod : racePods) {
+            // akkor írja felül, ha az első iterációban járunk (akkor mindig null) VAGY
+            // találtunk egy gyorsabbat
             if (fastest == null || racePod.getSpeed() > fastest.getSpeed()) {
                 fastest = racePod;
             }
