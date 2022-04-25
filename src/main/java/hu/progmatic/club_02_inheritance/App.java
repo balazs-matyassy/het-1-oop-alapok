@@ -17,7 +17,7 @@ public class App {
 
         // nem az állapotot definiáltuk egyenlőnek, hanem az embert
         // az ember nem változik a korral
-        if (p4.equals(p4)) {
+        if (p4.equals(p3)) {
             System.out.println("Anna felnőttként is Annácska marad.");
         }
     }
