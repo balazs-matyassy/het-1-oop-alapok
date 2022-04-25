@@ -19,5 +19,8 @@ public class App {
         }
 
         System.out.println(total);
+
+        Clubcard clubcard = new GoldClubcard(p3, "2251.01.01.", 26);
+        GoldClubcard goldClubcard = (GoldClubcard) clubcard;
     }
 }
